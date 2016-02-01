@@ -1,0 +1,17 @@
+{
+  "name": "ng2-tweet-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server/index.js",
+  "scripts": {
+    "start": "node ./server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "nconf": "^0.8.2",
+    "socket.io": "^1.4.5",
+    "twit": "^2.2.1"
+  }
+}
