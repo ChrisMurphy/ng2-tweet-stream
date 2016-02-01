@@ -4,14 +4,53 @@
   "description": "",
   "main": "./server/index.js",
   "scripts": {
-    "start": "node ./server/index.js"
+    "start": "node ./server/index.js",
+    "postinstall": "jspm install & tsd reinstall -s -o",
+    "setup": "npm install -g jspm typings && npm install"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular2": "^2.0.0-beta.1",
+    "body-parser": "^1.14.2",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "0.33.13",
     "express": "^4.13.4",
+    "gulp": "^3.9.0",
+    "gulp-environments": "^0.1.1",
+    "gulp-html-replace": "^1.5.4",
+    "gulp-htmlmin": "^1.1.4",
+    "gulp-sequence": "^0.4.1",
+    "gulp-tslint": "^3.3.0",
+    "gulp-tslint-stylish": "^1.1.1",
+    "gulp-useref": "^1.3.0",
+    "gulp-util": "^3.0.7",
+    "jspm": "^0.16.24",
+    "morgan": "^1.6.1",
     "nconf": "^0.8.2",
+    "path": "^0.12.7",
+    "reflect-metadata": "0.1.2",
+    "require-dir": "^0.3.0",
+    "rxjs": "5.0.0-beta.0",
     "socket.io": "^1.4.5",
-    "twit": "^2.2.1"
+    "socket.io-client": "^1.4.5",
+    "twit": "^2.2.1",
+    "zone.js": "0.5.10"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src"
+    },
+    "dependencies": {
+      "angular2": "npm:angular2@^2.0.0-beta.1",
+      "es6-shim": "npm:es6-shim@0.33.13",
+      "reflect-metadata": "npm:reflect-metadata@0.1.2",
+      "rxjs": "npm:rxjs@5.0.0-beta.0",
+      "zone.js": "npm:zone.js@0.5.10"
+    },
+    "devDependencies": {
+      "ts": "github:frankwallis/plugin-typescript@^2.4.9",
+      "typescript": "npm:typescript@^1.7.5"
+    }
   }
 }

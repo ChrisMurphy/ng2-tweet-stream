@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "module": "system",
+        "sourceMap": true,
+        "moduleResolution": "node"
+    },
+    "exclude": [
+        "jspm_packages",
+        "node_modules",
+        "typings/browser"
+    ]
+}
